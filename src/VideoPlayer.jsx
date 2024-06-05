@@ -115,17 +115,17 @@ function VideoPlayer() {
         <Grid container>
           <Grid item lg={2.5} >
         {/*Button for visibility of subtitles*/}
-        <Button onClick={toggleSubtitles} style={{display:'flex',flexDirection:'flex-end',marginLeft:'38%',marginTop:'20px',width:'200px',backgroundColor:'#061034',color:'#fff',border:'1px grey solid'}}>
+        <Button onClick={toggleSubtitles} style={{display:'flex',flexDirection:'flex-end',marginLeft:'100px',marginTop:'20px',width:'200px',backgroundColor:'#061034',color:'#fff',border:'1px grey solid'}}>
           {subtitlesVisible ? 'Hide Subtitles' : 'Show Subtitles'}
         </Button>
         </Grid>
         <Grid item lg={2.5}>
         {/*Button for visibility of subtitles' styling options*/}
-        <Button variant="text" onClick={toggleOptionsVisibility} style={{display:'flex',marginLeft:'80px',flexDirection:'flex-end',marginTop:'20px',width:'200px',backgroundColor:'#061034',color:'#fff',border:'1px grey solid'}}>
+        <Button variant="text" onClick={toggleOptionsVisibility} style={{display:'flex',marginLeft:'100px',marginRight:'80px',flexDirection:'flex-end',marginTop:'20px',width:'200px',backgroundColor:'#061034',color:'#fff',border:'1px grey solid'}}>
           {optionsVisible ? 'Hide Subtitle Options' : 'View Subtitle Options'}
         </Button>
         </Grid>
-        <Grid item sx={{marginLeft: {sm:'3%',lg:'12%'}}} sm={9} lg={5}>
+        <Grid item sx={{marginLeft: {sm:'3%',lg:'12%'}}} sm={10} lg={5}>
         {optionsVisible && (
           <div className="subtitle-options" style={{marginTop:'20px'}}>
             {/*Options*/}
